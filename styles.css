@@ -36,9 +36,17 @@ label, span {
 }
 
 .field {
-    margin: 12px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
 }
 
+#student-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 input[type="text"], input[type="button"] {
     padding: 10px;
     border-radius: 4px;
