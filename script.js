@@ -60,6 +60,8 @@ function submitForm() {
   })
   .then(() => {
     alert('Form submitted successfully!');
+    window.location.reload();  // Refresh the page
+
   })
   .catch((error) => {
     console.error('Error:', error);
