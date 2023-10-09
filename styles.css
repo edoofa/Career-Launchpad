@@ -23,10 +23,11 @@ footer {
     background-color: white;
     border-radius: 12px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 30px;
-    width: 60%;
+    padding: 10px;  /* Updated padding */
+    width: calc(100% - 20px);  /* Updated width */
     margin: auto;
 }
+
 
 label, span {
     padding: 8px;
