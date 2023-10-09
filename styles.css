@@ -1,0 +1,75 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #ccc;
+    padding: 20px;
+    text-align: center;
+}
+
+main {
+    padding: 20px;
+}
+
+footer {
+    background-color: #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+#content {
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 60%;
+    margin: auto;
+}
+
+label, span {
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+    display: inline-block;
+}
+
+.field {
+    margin: 12px 0;
+}
+
+input[type="text"], input[type="button"] {
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+input[type="button"] {
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+}
+
+input[type="button"]:hover {
+    background-color: #45a049;
+}
+
+#autocomplete-dropdown {
+    max-height: 200px;
+    overflow-y: auto;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    width: 200px;
+    position: absolute;
+    z-index: 1;
+}
+
+#autocomplete-dropdown div {
+    padding: 10px;
+    cursor: pointer;
+}
+
+#autocomplete-dropdown div:hover {
+    background-color: #f1f1f1;
+}
