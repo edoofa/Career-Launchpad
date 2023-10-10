@@ -17,8 +17,9 @@
         <table>
             <thead>
             <tr>
-              <td><label for="search">Search Group: </label></td>
-              <td><input id="search" name="search" onkeyup="filterFunction()" type="text"/></td>
+              <label for="search">Search Group: </label>
+              <input type="text" id="search" name="search" oninput="searchStudent()">
+              <div id="autocomplete-dropdown"></div>
             </tr>
             </thead>
             <tbody>
