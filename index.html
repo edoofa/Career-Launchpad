@@ -14,44 +14,40 @@
   <main>
     <section id="content">
       <form id="student-form">
-        <label for="search">Search Group: </label>
-        <input type="text" id="search" name="search" oninput="searchStudent()">
-        <div id="autocomplete-dropdown"></div>
-
-        <br><br>
-        <div id="student-details">
-          <div class="field">
-            <label for="name">Name: </label>
-            <span id="name"></span>
-          </div>
-          <br>
-          <div class="field">
-            <label for="group">Group: </label>
-            <span id="group"></span>
-          </div>
-          <br>
-          <div class="field">
-            <label for="college">College: </label>
-            <span id="college"></span>
-          </div>
-          <br>
-          <div class="field">
-            <label for="mentor">Mentor: </label>
-            <span id="mentor"></span>
-          </div>
-          <br>
-          <div class="field">
-            <label for="phone">Phone Number: </label>
-            <input type="text" id="phone" name="phone">
-          </div>
-          <br>
-          <div class="field">
-            <label for="email">Email: </label>
-            <input type="text" id="email" name="email">
-          </div>
-          <br>
-          <input type="button" value="SUBMIT" onclick="submitForm()">
-        </div>
+        <table>
+            <thead>
+            <tr>
+                <td><label for="search">Search Group: </label></td>
+                <td><input id="search" name="search" onkeyup="filterFunction()" type="text"/></td>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+            <td><label for="name">Name: </label></td>
+            <td><span id="name"></span></td>
+            </tr>
+            <tr>
+            <td><label for="group">Group: </label></td>
+            <td><span id="group"></span></td>
+            </tr>
+            <tr>
+            <td><label for="college">College: </label></td>
+            <td><span id="college"></span></td>
+            </tr>
+            <tr>
+            <td><label for="mentor">Mentor: </label></td>
+            <td><span id="mentor"></span></td>
+            </tr>
+            <tr>
+            <td><label for="email">Email: </label></td>
+            <td><input id="email" name="email" type="text"/></td>
+            </tr>
+            <tr>
+            <td><label for="phone">Phone Number: </label></td>
+            <td><input id="phone" name="phone" type="text"/></td>
+            </tr>
+            </tbody>
+            </table>
       </form>
     </section>
   </main>
