@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Your Webpage</title>
-  <link rel="stylesheet" href="styles.css">
+  <title>CAREER LAUNCHPAD</title>
+  <link rel="stylesheet" href="improved_styles.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
 </head>
 <body>
@@ -16,14 +16,14 @@
     <section id="content">
       <form id="student-form">
         <table>
-            <thead>
+          <thead>
             <tr>
               <td><label for="search">Search Group: </label></td>
               <td><input type="text" id="search" name="search" oninput="searchStudent()">
               <div id="autocomplete-dropdown"></div></td>
             </tr>
-            </thead>
-            <tbody>
+          </thead>
+          <tbody>
             <tr>
               <td><label for="name">Name: </label></td>
               <td><span id="name"></span></td>
@@ -49,10 +49,10 @@
               <td><input id="phone" name="phone" type="text"/></td>
             </tr>
             <tr>
-              <td><input type="button" value="SUBMIT" onclick="submitForm()"></td>
+              <td><input type="button" value="Select" onclick="validateAndSubmit()"></td>
             </tr>
-            </tbody>
-            </table>
+          </tbody>
+        </table>
       </form>
     </section>
   </main>
