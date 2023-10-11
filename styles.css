@@ -4,9 +4,11 @@ body {
 }
 
 header {
-  background-color: #ccc;
+  background-color: #0077be;
   padding: 20px;
   text-align: center;
+  font-size: 1.5em;
+  color: #fff;
 }
 
 main {
@@ -14,9 +16,10 @@ main {
 }
 
 footer {
-  background-color: #ccc;
+  background-color: #0077be;
   padding: 10px;
   text-align: center;
+  color: #fff;
 }
 
 #content {
@@ -61,14 +64,21 @@ input[type="text"], input[type="button"] {
 }
 
 input[type="button"] {
-  background-color: #4CAF50;
+  background-color: #0077be;
   color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 4px 2px;
   cursor: pointer;
-  
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 input[type="button"]:hover {
-  background-color: #45a049;
+  background-color: #568f96;
 }
 
 #autocomplete-dropdown {
