@@ -11,6 +11,14 @@ header {
   color: #fff;
 }
 
+#header-image {
+  float: left;
+  margin-right: 20px;
+  background-color: #fff;
+  height: 10 ;
+  width: 10;
+}
+
 main {
   padding: 20px;
 }
