@@ -49,7 +49,5 @@ The CSV file (`data.csv`) contains the following columns:
 
 Feel free to open issues or PRs if you think something could be better!
 
-## License
 
-MIT License. See `LICENSE` for more information.
 
