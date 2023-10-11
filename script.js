@@ -37,6 +37,38 @@ function searchStudent() {
   });
 }
 
+function validateAndSubmit() {
+  const search = document.getElementById('search').value;
+  const email = document.getElementById('email').value;
+  const phone = document.getElementById('phone').value;
+
+  let isValid = true;
+  let errorMessage = "";
+
+  if (!search) {
+    isValid = false;
+    errorMessage += "Search box cannot be empty.\n";
+  }
+
+  const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+  if (!emailRegex.test(email)) {
+    isValid = false;
+    errorMessage += "Invalid email format.\n";
+  }
+
+  if (!phone) {
+    isValid = false;
+    errorMessage += "Phone number cannot be empty.";
+  }
+
+  if (!isValid) {
+    alert(errorMessage);
+    return;
+  }
+
+  submitForm();
+}
+
 
 // Submit Form
 function submitForm() {
