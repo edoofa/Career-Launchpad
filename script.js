@@ -79,7 +79,11 @@ function submitForm() {
   const phone = document.getElementById("phone").value;
   const email = document.getElementById("email").value;
 
-  const data = {name, group, college, mentor, phone, email};
+  // Get current date and time
+  const now = new Date();
+  const dateTimeString = now.toISOString();
+
+  const data = {name, group, college, mentor, phone, email, dateTime: dateTimeString};
   
   // Send POST request to Google Apps Script Web App
   fetch('https://script.google.com/macros/s/AKfycbwEnt7WOH1zL1iiaThCLzOcRVmKbwmnPt54YVQPCTDVwDTSw2HA3JG4UJXZBBjSNOeJ5g/exec', {
